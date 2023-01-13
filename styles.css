@@ -1,0 +1,299 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logos{
+    height: 50px;
+    margin-top: 1rem;
+}
+
+.logos a img:hover{
+    transition: ease-in;
+    transition-duration: 1s
+}
+
+.header{
+position: relative;
+}
+
+.hero{
+    background: url(./img/laptop.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment:fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color:aliceblue;
+    max-width: 80%;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 5rem;
+}
+
+
+.navbar{
+    background-color:black;
+  position: absolute;
+  width: 100%;
+  padding: 1rem 0;
+  top: 0;
+  position: fixed;
+
+}
+
+.main-navigation a:hover{
+    color: #9800d1;
+    text-decoration: underline;
+    transition: ease-in;
+    transition-duration: 1s;
+    box-shadow: inset 100px 0 0 0 #add1df;
+    color: white;
+
+}
+
+.header-container{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.main-navigation a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-navigation a:last-of-type{
+    margin-bottom: 0;
+}
+
+
+@media (min-width:768px) {
+    .header-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:768px) {
+    .main-navigation{
+        flex-direction: row;
+        flex: 0 0 25rem;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+    .main-navigation a{
+        margin-bottom: 0;
+    }
+    h1{
+        padding: 0;
+    }
+}
+    
+
+/* ///////categories////////////// */
+
+
+.cat-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.categories ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.categories a{
+    background-color: white;
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.icons i{
+ font-size: 2rem;
+ color: rgb(1, 13, 14);
+}
+
+.categories a:nth-child(2){
+    font-size: 1rem;
+}
+
+.categories ul a{
+    text-decoration: none;
+}
+
+.categories ul li{
+    flex: 0 0 50%;
+    text-align: center;
+}
+.categories ul li:nth-child(1){
+    background-color: rgb(134, 184, 184);
+    padding: 2rem ;
+}
+.categories ul li:nth-child(2){
+    background-color: rgb(124, 240, 124);
+    padding: 2rem ;
+}
+.categories ul li:nth-child(3){
+    background-color: #db008d;
+    padding: 2rem ;
+}
+.categories ul li:nth-child(4){
+    background-color: #9800d1;
+    padding: 2rem ;
+}
+
+.categories ul li a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;                      
+}
+
+.categories ul li div i{
+    color: rgb(46, 10, 119);
+}
+
+@media (min-width:768px) {
+    .categories ul li{
+        flex: 0 0 25%;
+    }
+}
+
+/********************footer section****************************/
+
+.footer{
+    background-color: rgb(28, 28, 90);
+}
+.footer .container{
+    display: flex;
+   
+    color: white;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer .container{
+    display: flex;
+    text-align: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+
+@media (min-width:768px) {
+   .footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+   }
+    .footer .blog{
+        flex: 0 0 calc(33.3% - 1rem);
+        line-height: 2;
+    }
+}
+
+.footer .social  span{
+    color: white;
+    text-decoration: none;
+    display: none;
+    text-align: center;
+}
+
+.social a::before{
+    font-family: "Font Awesome 5 Brands";
+    font-size: 2rem;
+    color: white;
+}
+
+.blog .social{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social a{
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.social a[href*="google.com"]::before{
+    content: "\f0d4";
+}
+
+.social a[href*="airbnb.com"]::before{
+    content: "\f834";
+}
+
+.social a[href*="github.com"]::before{
+    content: "\f09b";
+}
+
+.social a[href*="twitter.com"]::before{
+    content: "\f099";
+}
+.social a[href*="linkedin.com"]::before{
+    content: "\f08c";
+}
+
+
+
+
+/*------------ copyright section------------------------------- */
+
+.copyright{
+    padding: 2rem;
+    background-color: rgb(82, 82, 233);
+    text-align: center;
+    box-shadow: #efe6f1;
+}
+
+.copyright small{
+    color: white;
+   margin-bottom: 0;
+   
+}
+
+
+   
+
